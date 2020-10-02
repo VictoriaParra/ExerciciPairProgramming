@@ -2,6 +2,11 @@ package com.floristeria.domain;
 
 import com.floristeria.excepciones.*;
 
+/**
+ * @author Victoria Parra
+ * @author RubÃ©n RodrÃ­guez
+ */
+
 public class Decoracion {
 
 	private TipoMaterial tipoMaterial;
@@ -26,8 +31,11 @@ public class Decoracion {
 		tipoMaterial = TipoMaterial.existe(material);
 
 		/**
-		 * @throws Lanzar excepción si el TipoMaterial es nulo, si el campo nombre está
-		 *                vacío, o si el precio tiene un numero en negativo.
+		 * @throws MaterialErroneoException Lanzar excepción si el TipoMaterial es nulo
+		 * @throws CampoVacioException      Lanzar excepción si el campo nombre está
+		 *                                  vacío
+		 * @throws IllegalArgumentException Lanzar excepción si el precio es un numero
+		 *                                  negativo
 		 */
 		if (tipoMaterial == null) {
 			throw new MaterialErroneoException("El material solo puede ser madera o plástico");

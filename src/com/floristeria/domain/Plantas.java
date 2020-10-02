@@ -1,14 +1,15 @@
 package com.floristeria.domain;
 
+/**
+ * @author Victoria Parra
+ * @author RubÃ©n RodrÃ­guez
+ */
+
 public interface Plantas {
 
-	//Esto lo sacaria ya que no estan en uso
-//	public String nombre = "";
-//
-//	public double precio = 0;
-
-	
-	//Posible método de la interface
+	/** 
+	 * @return devuelve una descripción
+	 */
 	public String getDescripcion();
 
 }

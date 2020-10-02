@@ -2,6 +2,11 @@ package com.floristeria.domain;
 
 import com.floristeria.excepciones.CampoVacioException;
 
+/**
+ * @author Victoria Parra
+ * @author RubÃ©n RodrÃ­guez
+ */
+
 public class Arboles implements Plantas {
 
 	private String nombre;
@@ -23,8 +28,12 @@ public class Arboles implements Plantas {
 	public Arboles(String nombre, double altura, double precio) throws CampoVacioException, IllegalArgumentException {
 
 		/**
-		 * @throws Lanzar excepción si el campo está vacío o, si tanto la altura y el
-		 *                precio, están en negativo.
+		 * @throws CampoVacioException      Lanzar excepción si el campo nombre está
+		 *                                  vacío
+		 * 
+		 * @throws IllegalArgumentException Lanzar excepción si tanto la altura y el
+		 *                                  precio, están en negativo
+		 * 
 		 */
 
 		if (nombre.isEmpty()) {

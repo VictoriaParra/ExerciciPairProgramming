@@ -8,6 +8,11 @@ import com.floristeria.domain.Decoracion;
 import com.floristeria.domain.Flores;
 import com.floristeria.excepciones.CampoVacioException;
 
+/**
+ * @author Victoria Parra
+ * @author RubÃ©n RodrÃ­guez
+ */
+
 public class Floristeria {
 
 	private String nombre;
@@ -32,7 +37,7 @@ public class Floristeria {
 	public Floristeria(String nombre) throws CampoVacioException {
 
 		/**
-		 * @throws Lanzar excepción si el campo nombre está vacío
+		 * @throws CampoVacioException Lanzar excepción si el campo nombre está vacío
 		 */
 
 		if (nombre.isEmpty()) {
@@ -43,14 +48,31 @@ public class Floristeria {
 
 	}
 
-	// Métodos para añadir elementos a las listas
+	/**
+	 * Método para añadir un árbol a la lista arboles
+	 * 
+	 * @param arbol
+	 */
+
 	public void anadirArbol(Arboles arbol) {
 		listaArboles.add(arbol); // Se añade a la listaArboles
 	}
 
+	/**
+	 * Método para añadir una flor a la lista flores
+	 * 
+	 * @param flor
+	 */
+
 	public void anadirFlor(Flores flor) {
 		listaFlores.add(flor);
 	}
+
+	/**
+	 * Método para añadir decoración a la lista decoracioes
+	 * 
+	 * @param deco
+	 */
 
 	public void anadirDecoracion(Decoracion deco) {
 		listaDecoraciones.add(deco);
