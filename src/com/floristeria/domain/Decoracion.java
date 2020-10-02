@@ -2,12 +2,16 @@ package com.floristeria.domain;
 
 import com.floristeria.excepciones.*;
 
+
 /**
  * @author Victoria Parra
  * @author RubÃ©n RodrÃ­guez
  */
 
+
 public class Decoracion {
+	
+	private TipoMaterial tipoMaterial;
 
 	private TipoMaterial tipoMaterial;
 
@@ -15,14 +19,15 @@ public class Decoracion {
 
 	private double precio;
 
+
 	/**
 	 * Constructor
 	 * 
-	 * @param nombre       nombre de la decoración
+	 * @param nombre       nombre de la decoraciï¿½n
 	 * 
-	 * @param TipoMaterial tipo de material de la decoración
+	 * @param TipoMaterial tipo de material de la decoraciï¿½n
 	 * 
-	 * @param precio       precio de la decoración
+	 * @param precio       precio de la decoraciï¿½n
 	 */
 
 	public Decoracion(String nombre, String material, double precio)
@@ -31,14 +36,14 @@ public class Decoracion {
 		tipoMaterial = TipoMaterial.existe(material);
 
 		/**
-		 * @throws MaterialErroneoException Lanzar excepción si el TipoMaterial es nulo
-		 * @throws CampoVacioException      Lanzar excepción si el campo nombre está
-		 *                                  vacío
-		 * @throws IllegalArgumentException Lanzar excepción si el precio es un numero
+		 * @throws MaterialErroneoException Lanzar excepciï¿½n si el TipoMaterial es nulo
+		 * @throws CampoVacioException      Lanzar excepciï¿½n si el campo nombre estï¿½
+		 *                                  vacï¿½o
+		 * @throws IllegalArgumentException Lanzar excepciï¿½n si el precio es un numero
 		 *                                  negativo
 		 */
 		if (tipoMaterial == null) {
-			throw new MaterialErroneoException("El material solo puede ser madera o plástico");
+			throw new MaterialErroneoException("El material solo puede ser madera o plï¿½stico");
 
 		} else if (nombre.isEmpty()) {
 			throw new CampoVacioException("Ha dejado el campo nombre vacio");
@@ -57,5 +62,6 @@ public class Decoracion {
 	public String toString() {
 		return "\t Nombre: " + nombre + ", Material: " + tipoMaterial + ", Precio: " + precio;
 	}
+
 
 }

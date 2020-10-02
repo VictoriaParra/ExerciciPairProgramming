@@ -1,3 +1,4 @@
+
 package com.floristeria.excepciones;
 
 
@@ -7,6 +8,7 @@ package com.floristeria.excepciones;
  */
 
 public class MaterialErroneoException extends Exception {
+
 
 	private static final long serialVersionUID = 1L;
 
@@ -18,4 +20,6 @@ public class MaterialErroneoException extends Exception {
 		
 		super(msj_error);
 	}
+
 }
+

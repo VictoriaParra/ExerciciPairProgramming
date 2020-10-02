@@ -3,6 +3,7 @@
  */
 package com.floristeria.domain;
 
+
 /**
  * 
  * Clase enum para el tipo de Material de la decoración. 
@@ -11,12 +12,9 @@ package com.floristeria.domain;
  * 
  * @author Victoría Parra
  * @author Rubén Rodríguez
- *
- */
-public enum TipoMaterial {
-	PLASTICO,
-	MADERA;
+
 	
+
 	public static TipoMaterial existe(String tipo) {
 	    for (TipoMaterial valor : TipoMaterial.values()){
 	        if (valor.name().equalsIgnoreCase(tipo))
@@ -42,3 +40,4 @@ public enum TipoMaterial {
 	}
 		
 }
+

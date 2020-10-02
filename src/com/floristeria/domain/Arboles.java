@@ -4,7 +4,7 @@ import com.floristeria.excepciones.CampoVacioException;
 
 /**
  * @author Victoria Parra
- * @author Rub√©n Rodr√≠guez
+ * @author Rub√É¬©n Rodr√É¬≠guez
  */
 
 public class Arboles implements Plantas {
@@ -18,21 +18,22 @@ public class Arboles implements Plantas {
 	/**
 	 * Constructor
 	 * 
-	 * @param nombre nombre del ·rbol
+	 * @param nombre nombre del √°rbol
 	 * 
-	 * @param altura altura del ·rbol
+	 * @param altura altura del √°rbol
 	 * 
-	 * @param precio precio del ·rbol
+	 * @param precio precio del √°rbol
 	 */
 
 	public Arboles(String nombre, double altura, double precio) throws CampoVacioException, IllegalArgumentException {
 
+
 		/**
-		 * @throws CampoVacioException      Lanzar excepciÛn si el campo nombre est·
-		 *                                  vacÌo
+		 * @throws CampoVacioException      Lanzar excepci√≥n si el campo nombre est√°
+		 *                                  vac√≠o
 		 * 
-		 * @throws IllegalArgumentException Lanzar excepciÛn si tanto la altura y el
-		 *                                  precio, est·n en negativo
+		 * @throws IllegalArgumentException Lanzar excepci√≥n si tanto la altura y el
+		 *                                  precio, est√°n en negativo
 		 * 
 		 */
 
@@ -41,7 +42,7 @@ public class Arboles implements Plantas {
 			throw new CampoVacioException("Has dejado el campo nombre vacio");
 		} else if (altura < 0 || precio < 0) {
 
-			throw new IllegalArgumentException("Has introducido un n˙mero inferior a 0");
+			throw new IllegalArgumentException("Has introducido un n√∫mero inferior a 0");
 		} else {
 
 			this.nombre = nombre;
@@ -50,12 +51,13 @@ public class Arboles implements Plantas {
 
 			this.precio = precio;
 		}
+
 	}
 
 	@Override
 	public String getDescripcion() {
 		// TODO Auto-generated method stub
-		return "Esto es un ·rbol.";
+		return "Esto es un √°rbol.";
 	}
 
 	@Override
